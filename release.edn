@@ -1,4 +1,4 @@
 {:group-id "org.pinkgorilla"
  :artifact-id "ui-binaryclock"
- :scm-url "https://github.com/pink-gorilla/ui-binaryclock/"
+ :scm-url "https://github.com/pink-gorilla/ui-binary-clock/"
  }
