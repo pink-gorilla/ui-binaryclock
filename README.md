@@ -1,4 +1,4 @@
-# BinaryClock [![GitHub Actions status |pink-gorilla/ui-binary-clock](https://github.com/pink-gorilla/ui-binary-clock/workflows/CI/badge.svg)](https://github.com/pink-gorilla/ui-binaryclock/actions?workflow=CI)[![Clojars Project](https://img.shields.io/clojars/v/org.pinkgorilla/ui-binaryclock.svg)](https://clojars.org/org.pinkgorilla/ui-binaryclock)
+# BinaryClock [![GitHub Actions status |pink-gorilla/ui-binary-clock](https://github.com/pink-gorilla/ui-binary-clock/workflows/CI/badge.svg)](https://github.com/pink-gorilla/ui-binary-clock/actions?workflow=CI)[![Clojars Project](https://img.shields.io/clojars/v/org.pinkgorilla/ui-binaryclock.svg)](https://clojars.org/org.pinkgorilla/ui-binaryclock)
 
 An example how to create a custom ui renderer for goldly.
 
