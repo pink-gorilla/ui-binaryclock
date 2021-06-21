@@ -1,0 +1,13 @@
+{:name "ui-binaryclock"
+ :clj-require []
+ :cljs-namespace [ui.binaryclock.goldly]
+ :cljs-bindings {}
+ :cljs-ns-bindings {}
+ ; css and pinkie not yet via loader
+ :css {:components  {:clock {true ["binaryclock/clock.css"]}}
+       :config {:clock true}}
+ :pinkie {}
+ :snippets [{:type :pinkie
+             :category :clock
+             :id :clock
+             :filename "snippets/binaryclock/clock.edn"}]}
