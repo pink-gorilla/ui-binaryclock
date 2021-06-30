@@ -21,8 +21,7 @@ In deps.edn add quil as dependency and add goldly alias
                {org.pinkgorilla/ui-binaryclock {:mvn/version "0.0.4"}}
    :exec-fn goldly-server.app/goldly-server-run!
    :exec-args {:profile "watch"
-               :config {:goldly {:extensions [[ui.binaryclock.goldly]
-                                              ]}}}}
+               :config {:goldly {}}}}
 ```
 
 
