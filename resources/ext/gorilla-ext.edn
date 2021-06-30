@@ -3,11 +3,12 @@
  :cljs-namespace [ui.binaryclock.goldly]
  :cljs-bindings {}
  :cljs-ns-bindings {}
- ; css and pinkie not yet via loader
- :css {:components  {:clock {true ["binaryclock/clock.css"]}}
-       :config {:clock true}}
- :pinkie {}
+ :theme {:available  {:clock {true ["binaryclock/clock.css"]}}
+         :current {:clock true}}
  :snippets [{:type :pinkie
              :category :clock
              :id :clock
-             :filename "snippets/binaryclock/clock.edn"}]}
+             :filename "snippets/binaryclock/clock.edn"}]
+ ; modules and pinkie not yet via loader
+ :pinkie {}
+ :modules {}}
