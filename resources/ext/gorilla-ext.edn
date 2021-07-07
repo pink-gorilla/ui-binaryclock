@@ -6,7 +6,7 @@
  :cljs-bindings {'clock ui.binaryclock.clock/binary-clock}
  :cljs-ns-bindings {}
  :pinkie {:p/clock ui.binaryclock.clock/binary-clock}
- :modules {} ; ; modules not yet via loader
+ :lazy true
  :snippets [{:type :pinkie
              :category :clock
              :id :clock
