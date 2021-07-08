@@ -25,7 +25,8 @@
         (map (partial vector :div.clock-cell)
              items)))
 
-(defn ^{:category :demo}
+(defn ^{:R true
+        :category :demo}
   clock [date show-100s toggle-100s]
   [:div.clock-main {:on-click toggle-100s
                     :class (when show-100s "wide")}
@@ -43,7 +44,8 @@
 (defn update-time []
   (swap! clock-state assoc :time (js/Date.)))
 
-(defn ^{:category :demo}
+(defn ^{:R true
+        :category :demo}
   binary-clock
   "displays a binary clock; on click with seconds.
   useful to debug reagent component that do not update"
@@ -52,6 +54,7 @@
     (if show-100s
       (r/next-tick update-time)
       (js/setTimeout update-time 1000))
+    ^:R
     [clock time show-100s
      #(swap! clock-state update-in [:show-100s] not)]))
 
