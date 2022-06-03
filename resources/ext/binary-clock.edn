@@ -1,0 +1,11 @@
+{:name "ui-binaryclock"
+ ;build
+ :lazy true
+ :cljs-namespace [ui.binaryclock.clock]
+ :cljs-ns-bindings {'ui.clock {'clock ui.binaryclock.clock/binary-clock}}
+ ; theme
+ :theme {:available  {:clock {true ["binaryclock/clock.css"]}}
+         :current {:clock true}}
+
+
+ }

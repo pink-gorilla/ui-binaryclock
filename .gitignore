@@ -20,4 +20,5 @@ shadow-cljs.edn
 /node_modules
 goldly_bindings_generated.cljs
 .lsp
+.clj-kondo
 .webly
