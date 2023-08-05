@@ -1,6 +1,6 @@
 {:name "ui-binaryclock"
  ;build
- :lazy true
+ :lazy-sci true
  :cljs-namespace [ui.binaryclock.clock]
  :cljs-ns-bindings {'ui.clock {'clock ui.binaryclock.clock/binary-clock}}
  ; theme
