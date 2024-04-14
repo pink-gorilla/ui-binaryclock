@@ -2,12 +2,12 @@
   (:require
    [reagent.core :as r]))
 
-(defn cell [n bit]
+(defn- cell [n bit]
   [:div.clock-cell {:class (if (bit-test n bit)
                              "light"
                              "dark")}])
 
-(defn column [n]
+(defn- column [n]
   [:div.clock-col
    [cell n 3]
    [cell n 2]
@@ -15,18 +15,17 @@
    [cell n 0]
    [:div.clock-cell n]])
 
-(defn column-pair [n]
+(defn- column-pair [n]
   [:div.clock-pair
    [column (quot n 10)]
    [column (mod n 10)]])
 
-(defn legend [& items]
+(defn- legend [& items]
   (into [:div.clock-col.clock-legend]
         (map (partial vector :div.clock-cell)
              items)))
 
-(defn ^{:R true
-        :category :demo}
+(defn- ^{:R true}
   clock [date show-100s toggle-100s]
   [:div.clock-main {:on-click toggle-100s
                     :class (when show-100s "wide")}
@@ -41,11 +40,10 @@
 (def clock-state (r/atom {:time (js/Date.)
                           :show-100s false}))
 
-(defn update-time []
+(defn- update-time []
   (swap! clock-state assoc :time (js/Date.)))
 
-(defn ^{:R true
-        :category :demo}
+(defn ^{:R true}
   binary-clock
   "displays a binary clock; on click with seconds.
   useful to debug reagent component that do not update"
