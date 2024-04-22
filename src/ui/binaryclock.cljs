@@ -1,4 +1,4 @@
-(ns ui.binaryclock.clock
+(ns ui.binaryclock
   (:require
    [reagent.core :as r]))
 
